@@ -8,7 +8,7 @@ const Banner = () => {
   const navigate = useNavigate();
 
   const handleGetStarted = () =>{
-    navigate('/signup')
+    navigate('/login')
   }
   return (
     <div className="bg-cover bg-center h-[350px] relative z-0"
