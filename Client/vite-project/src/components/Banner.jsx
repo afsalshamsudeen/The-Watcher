@@ -1,11 +1,12 @@
 import React from 'react'
 import Logo from "../assets/eye.png"
 import BackgroundImage from "../assets/bg.jpg"
+import BG from "../assets/home_bg.jpg"
 
 const Banner = () => {
   return (
-    <div className="bg-cover bg-center h-[300px] relative z-0"
-            style={{ backgroundImage: `url(${BackgroundImage})` }}>
+    <div className="bg-cover bg-center h-[350px] relative z-0"
+            style={{ backgroundImage: `url(${BG})` }}>
       <div className='flex flex-col items-center justify-center gap-4 pt-20'>
             <div className='flex flex-row items-center gap-3'>
                 <img className='w-16' src={Logo} alt="" />
@@ -14,7 +15,7 @@ const Banner = () => {
             
             <p className='text-white'>AI-powered safety at your finger tips.</p>
             <button className='bg-blue-500 text-white px-4 py-2 rounded-md font-medium cursor-pointer hover:bg-blue-600'>Start Detecting</button>
-            <p className='text-white'>Learn more</p>
+            <p className='text-white cursor-pointer'>Learn more</p>
         </div>
         </div>
   )
