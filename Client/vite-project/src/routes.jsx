@@ -4,6 +4,9 @@ import Layout from './components/Layout'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import ErrorPage from './components/ErrorPage'
+import SignUp from './pages/SignUp'
+import HomePage from './pages/HomePage'
+import ProtectedRoute from './components/ProtectedRoutes'
 
 const routes = createBrowserRouter([
     {
@@ -14,6 +17,16 @@ const routes = createBrowserRouter([
             },
             {
                 path:"/login",element:<Login/>
+            },
+            {
+                path:"/signup", element:<SignUp/>
+            },
+            {
+                path:"/home", element:(
+                <ProtectedRoute>
+                    <HomePage/>
+                </ProtectedRoute>
+                )
             }
         ]
     },
