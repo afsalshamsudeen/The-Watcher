@@ -44,7 +44,7 @@ const Profile = () => {
             <div className='flex flex-col'>
                 <h1>{userDetails.userName}</h1>
                 <p>{userDetails.email}</p>
-                <p>Hydrabad</p>
+                <p>Location: <span className='text-blue-600'>{userDetails.location}</span></p>
             </div>
             
 
@@ -80,7 +80,6 @@ const Profile = () => {
         ) : (
             <p>Loading....</p>
         ) }
-        
     </div>
   )
 }
