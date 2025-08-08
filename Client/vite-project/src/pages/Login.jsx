@@ -19,7 +19,10 @@ const Login = () => {
       console.log("Sigin Successfully!");
       navigate("/home");
     } catch (error) {
+        alert("Invalid Credentials",error.message)
         console.log(error.message);
+        
+        
         
     }
     

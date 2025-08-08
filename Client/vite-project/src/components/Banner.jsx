@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from "../assets/eye.png"
+import Logo from "../assets/pixelated-w.png"
 import BG from "../assets/home_bg.jpg"
 import {useNavigate} from "react-router-dom"
 

@@ -20,7 +20,6 @@ const SignUp = () => {
         try {
             await createUserWithEmailAndPassword(auth,email,password);
             const user = auth.currentUser;
-            console.log(user);
 
             if(user){
               await setDoc(doc(db, "Users", user.uid),{
@@ -77,6 +76,9 @@ const SignUp = () => {
             className='w-full border-0 border-b border-gray-300 focus:outline-none focus:border-blue-300 placeholder-grey-500 bg-transparent'
         />
       </div>
+      </div>
+      <div className='p-5'>
+        <p>Detect my location</p>
       </div>
         <button onClick={handleSignUp} className='bg-blue-500 text-white px-4 py-2 rounded-md font-medium cursor-pointer hover:bg-blue-600'>Sign Up</button>
         <p className='text-gray-400 font-light pt-2'>Already have an account? <Link to='/login' className='text-blue-400'>Sign in</Link> </p>
