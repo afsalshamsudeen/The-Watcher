@@ -1,10 +1,11 @@
 import React from 'react'
 import Profile from '../components/Profile'
+import HomeHero from '../components/HomeHero'
 
 const HomePage = () => {
   return (
-    <div>
-      <h1>This Page is under construction</h1>
+    <div className=''>
+      <HomeHero/>
     </div>
   )
 }
